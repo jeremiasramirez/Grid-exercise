@@ -4,16 +4,16 @@ body{
 	justify-content: center;
 	align-items: center;
 	margin-top: 1em;
-	background: #222;
+	/*background: #222;*/
 }
 .managergrid{
-	margin: 1em;
+	margin: 2em;
 }
 .content__grid{
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-rows: 100px 100px 100px;
-	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-columns: 100px 100px 100px 100px 100px;
 	grid-row-gap: 3px;
 	grid-column-gap: 3px;
 	text-align: center;
@@ -26,5 +26,27 @@ body{
 	color: white;
 	font-size: 19px;
 	font-family: arial;
+	border-radius:3px;
+	transition: .5s;
 
+}
+#columntext, #rowtext{
+	font-family: sans-serif;
+	color: white;
+	background-color: orangered;
+	padding:.3em;
+	border-radius: 5px;
+}
+.scalade{
+	animation: scalade .3s linear;
+	transition: .5s;
+}
+@keyframes scalade{
+	to{
+		/*opacity: .;*/
+		background: orange;
+		transition: .5s;
+		transform: scale(.7);
+		border-radius: 50%;
+	}
 }
